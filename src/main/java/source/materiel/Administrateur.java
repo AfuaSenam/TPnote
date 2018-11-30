@@ -106,7 +106,7 @@ public class Administrateur extends Employe {
 	}
 		
 	//supprime les matos defectueux de l'entreprise
-	public void supprimerMaterielDefEmprunteur(Emprunteur emprunteur)
+	private void supprimerMaterielDefEmprunteur(Emprunteur emprunteur)
 	{
 		for(Empruntable matos:emprunteur.listerMateriel())
 		{
@@ -116,6 +116,17 @@ public class Administrateur extends Employe {
 			}
 		}
 	}
+
+	public void supprimerMaterielDefectueuxAgence() {
+		for(Empruntable matos:this.getAgence().listerMateriel())
+		{
+			if(matos.isDefectueux())
+			{
+				this.getAgence().retirerMatos(matos);
+			}
+		}
+	}
+
 	
 	
 		

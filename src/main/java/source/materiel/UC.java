@@ -6,4 +6,8 @@ public class UC extends Empruntable{
 	{
 		
 	}
+
+	public UC(boolean b) {
+		this.setLimitationPretAgence(b);
+	}
 }

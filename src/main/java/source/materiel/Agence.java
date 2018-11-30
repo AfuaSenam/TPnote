@@ -26,7 +26,12 @@ public class Agence extends Emprunteur{
 	
 	public Agence()
 	{
-		
+		super();
+	}
+	
+	public Agence(String phrase)
+	{
+		this.nom=phrase;
 	}
 	
 }

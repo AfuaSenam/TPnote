@@ -35,4 +35,8 @@ public class Entreprise extends Emprunteur{
 	{
 		super();
 	}
+	public Entreprise(String phrase)
+	{
+		this.nom=phrase;
+	}
 }
